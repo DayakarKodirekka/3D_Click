@@ -129,7 +129,8 @@ namespace BenchmarkLinqSelect
                 resultObjArr[i] = new ClassB() { Data = inputObjArr[i].Data + 15 };
             }
             sw_a.Stop();
-            Console.WriteLine($"Time Taken for array : {sw_a.Elapsed.TotalMilliseconds:0.000}ms");
+            // Console.WriteLine($"Time Taken for array : {sw_a.Elapsed.TotalMilliseconds:0.000}ms");
+            Console.WriteLine("Time Taken for array of Class: {0}ms",(sw_a.Elapsed.TotalMilliseconds)*1000);
 
             // Time calculation using Structures
 
@@ -141,7 +142,8 @@ namespace BenchmarkLinqSelect
                 //resultStructArr[i] = new DataB() { Data = inputSturctArr[i].Data + 15 };
             }
             sw_s.Stop();
-            Console.WriteLine($"Time Taken for structures :{sw_s.Elapsed.TotalMilliseconds:0.000}ms");
+            // Console.WriteLine($"Time Taken for structures :{sw_s.Elapsed.TotalMilliseconds:0.000}ms");
+            Console.WriteLine("Time Taken for array of Struct: {0}ms",(sw_s.Elapsed.TotalMilliseconds)*1000);
         }
 
 
